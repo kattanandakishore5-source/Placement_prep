@@ -1,0 +1,4 @@
+Python is a programming language.
+Python is popular for backend development.
+Backend development uses Python.
+Python makes development easier.
