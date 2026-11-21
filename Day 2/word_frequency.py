@@ -10,8 +10,6 @@ try:
 
     words = text.split()
 
-    if not words:
-        print("No words found in the file.")
 
     frequency = {}
 
@@ -23,12 +21,29 @@ try:
 
     sorted_words = sorted(frequency.items(),key=lambda x: x[1],reverse=True)
 
+    if not words:
+        print("No words found in the file.")
+
+    else:
+        frequency = {}
+
+    for word in words:
+        if word in frequency:
+            frequency[word] += 1
+        else:
+            frequency[word] = 1
+
+    sorted_words = sorted(
+        frequency.items(),
+        key=lambda x: x[1],
+        reverse=True
+    )
+
     print("===== WORD FREQUENCY COUNTER =====")
     print("Top 10 Most Frequent Words:\n")
 
-    for i in range(min(10,len(sorted_words))):
-        word,count = sorted_words[i]
-        print(f"{i+1}. {word} : {count}")
+    for i, (word, count) in enumerate(sorted_words[:10], start=1):
+        print(f"{i}. {word}: {count}")
           
 
 except FileNotFoundError:
