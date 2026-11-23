@@ -128,7 +128,7 @@ def main():
         print("6. Exit")
 
         try:
-            choice = int(input("Enter your choice: "))
+            choice = int(input("Enter your choice:\n "))
         except ValueError:
             print("Please enter a valid number.")
             continue
