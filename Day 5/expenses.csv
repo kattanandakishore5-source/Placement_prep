@@ -1,3 +1,5 @@
 name,amount,category
-Food,100.0,Eats
-Petrol,200.0,Bike
+Food,150.0,Dining
+Petrol,200.0,Transportation
+Books,450.0,Education
+Internet,799.0,Utilities

@@ -1,7 +1,17 @@
 {
   "Nanda": {
-    "Python": 100,
-    "SQL": 100,
-    "DSA": 100
+    "Python": 95,
+    "SQL": 92,
+    "DSA": 98
+  },
+  "Aarav": {
+    "Python": 88,
+    "SQL": 84,
+    "DSA": 90
+  },
+  "Priya": {
+    "Python": 94,
+    "SQL": 90,
+    "DSA": 96
   }
 }
